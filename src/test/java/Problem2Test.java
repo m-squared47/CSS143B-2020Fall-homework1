@@ -28,10 +28,9 @@ public class Problem2Test {
                 {0, 2, 5, 8, 10, 11}
         };
 
-        int input[];
-
         for(int i = 0; i < inputs.length; i++){     //go through every element and target
-            input = Problem2.bubbleSort(inputs[i]);
+            int input[] = inputs[i];
+            Problem2.bubbleSort(input);
             assertArrayEquals(input, targets[i]);
         }
     }
